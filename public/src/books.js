@@ -13,8 +13,6 @@ const partitionBooksByBorrowedStatus = books => {
   const booksBorrowed = books.filter((book) =>
    book.borrows.some((borrow) => borrow.returned === false)
   );
-  /*booksBorrowed is a helper function with the .some() method that will check if our condition
-   is true within the borrow array.*/
   const finalArray = [[...booksBorrowed], [...booksReturned]];
   return finalArray;
  }
