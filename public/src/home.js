@@ -2,7 +2,7 @@ const getTotalBooksCount = books => {
   return books.length;
 }
 
-const sortSplice = array => {
+const sortSplice = array => { // helper function
   array.sort((entryA,entryB) => entryB.count - entryA.count)
   return array.splice(0,5)
 }
