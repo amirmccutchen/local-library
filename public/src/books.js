@@ -26,7 +26,7 @@ const getBorrowersForBook = (book, accounts) => {
     object['returned'] = borrow.returned;
     result.push(object);
   })
-  return result.slice(0,10); // method limiting size of the array, had to google how to do this since it wasn't covered yet
+  return result.slice(0,10);
 }
 
 module.exports = {
