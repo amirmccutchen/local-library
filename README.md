@@ -133,14 +133,4 @@ You can view all of the books data inside of the `public/data/` directory. Each 
 }
 ```
 
-Each book represents a physical book but also contains additional information. In particular:
-
-- The `authorId` matches up with an author. It represents who wrote the book.
-- The `borrows` array is a list of transactions that have ocurred with this book. For example, in the example above the book has been borrowed three times.
-  - The `id` for each "borrow" record matches with an account ID. In the above example, the account with an ID of `"5f446f2e2a4fcd687493a775"` has not yet returned the book, meaning they still are in possession of it.
-
-## Functions
-
-You are tasked with writing the following functions that work with the above datasets. The instructions for the functions can be found at the link below.
-
-- [Function Instructions](./docs/function-instructions.md)
+Each book represents a physical book but also contains additional information.
